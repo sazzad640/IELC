@@ -9,19 +9,30 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <div class="bg-energy"></div>
 
 <nav id="nav">
   <div class="nav-wrap">
     <div class="brand"><h2>IELC</h2></div>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <ul class="nav-links">
-      <li><a>HOME</a></li>
-      <li><a>PAGES</a></li>
-      <li><a>EVENTS</a></li>
-      <li><a>CONTACT</a></li>
+      <li><a href="#about">HOME</a></li>
+      <li><a href="#activities">PAGES</a></li>
+      <li><a href="#events">EVENTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </div>
 </nav>
+
+<!-- ADDED (does NOT change content) -->
+<div class="nav-overlay" id="navOverlay"></div>
 
 <section class="hero">
   <div>
@@ -30,7 +41,6 @@
   </div>
 </section>
 
-<!-- OUR JOURNEY -->
 <section id="about" class="about">
   <div class="img-slot"><img src="24.jpg" alt="ielc logo"></div>
   <div class="text">
@@ -45,7 +55,6 @@
   </div>
 </section>
 
-<!-- CORE ACTIVITIES -->
 <section id="activities">
   <div class="section-title"><h2>Core Activities</h2></div>
   <div class="cards">
@@ -56,7 +65,6 @@
   </div>
 </section>
 
-<!-- EVENTS SHOWCASE -->
 <section id="events">
   <div class="section-title"><h2>Events Showcase</h2></div>
   <div class="events-wrap">
@@ -78,10 +86,8 @@
   </div>
 </section>
 
-<!-- ACHIEVEMENTS & IMPACT -->
 <section id="impact">
-  <div class="section-title"><h2>An Overview of <br>our
-Legacy Of Excellence</h2></div>
+  <div class="section-title"><h2>An Overview of <br>our Legacy Of Excellence</h2></div>
   <div class="stats">
     <div class="stat"><h3>6</h3><p>National Fests</p></div>
     <div class="stat"><h3>17</h3><p>Workshops</p></div>
@@ -90,7 +96,6 @@ Legacy Of Excellence</h2></div>
   </div>
 </section>
 
-<!--ANCHORS -->
 <section id="leaders">
   <div class="section-title"><h2>The Anchors</h2></div>
   <div class="leaders">
@@ -100,25 +105,31 @@ Legacy Of Excellence</h2></div>
       <span style="font-size: 15px;">Moderator</span>
     </div>
   </div>
-  <div style="text-align:center"><button class="leader-button">Meet All Executives</button></div>
+  <div style="text-align:center">
+    <button class="leader-button">Meet All Executives</button>
+  </div>
 </section>
 
-<!-- FROM THE DESK -->
 <section class="from-desk">
   <div class="sec-head"><h3>From The Desk</h3></div>
   <div class="content">
     <div class="img-box"><img src=".jpg" alt="PHOTO"></div>
     <div class="text-box">
       <h3>Md. Sazzadul Islam</h3>
-      <span style="color: white; font-size: 18px;">Secretary - Information & Communication Technology<br>9th Executive Committee</span>
-      <p></p>
-      <p style="font-size: 15px;">As the editor of the IELC website, I want to share the inspiration and motivation that led me to undertake this project. This website connects, informs, and inspires our club members to thrive in our mission.</p>
-      <div class="signature" style="font-family: 'Great Vibes',cursive;">Sazzadul<br>31.12.2025</div>
+      <span style="color: white; font-size: 18px;">
+        Secretary - Information & Communication Technology<br>
+        9th Executive Committee
+      </span>
+      <p style="font-size: 15px;">
+        As the editor of the IELC website, I want to share the inspiration and motivation that led me to undertake this project. This website connects, informs, and inspires our club members to thrive in our mission.
+      </p>
+      <div class="signature" style="font-family: 'Great Vibes',cursive;">
+        Sazzadul<br>31.12.2025
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="main-footer" id="contact">
   <div class="container-xxl" style="display:flex;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;">
@@ -148,13 +159,10 @@ Legacy Of Excellence</h2></div>
     </div>
   </div>
   <div class="sub-footer">
-    <div style="text-align:right;">© 2025 IELC by <a href="#" target="_blank"> Md. Sazzadul Islam</a></div>
+    <div style="text-align:right;">© 2025 IELC by <a href="#"> Md. Sazzadul Islam</a></div>
   </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
-
