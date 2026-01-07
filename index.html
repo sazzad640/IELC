@@ -4,17 +4,162 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>IELC — Ideal English Language Club</title>
-<link href='fonts.googleapis.com' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
 
 <div class="bg-energy"></div>
 
+<header id="header" class="header"> 
+  <nav id="nav" class="nav container"> 
+    <div class="nav__data">
+
+      <a href="#" class="nav__logo">
+         IELC
+      </a> 
+      
+      <div class="nav__toggle" id="nav-toggle"> 
+        
+        <i class="ri-menu-line nav__burger"></i> 
+      
+      </div>
+      
+      <!--=============== NAV MENU ===============--> 
+      
+      <div class="nav__menu" id="nav-menu"> 
+        
+        <ul class="nav__list">
+          
+          <li>
+            <a href="" class="nav__link">Home</a>
+          </li>
+          
+          <!--=============== DROPDOWN 1 ===============--> 
+          
+          <li class="dropdown__item">   
+            
+            <div class="nav__link">Pages 
+              <i class="ri-arrow-down-s-line dropdown__arrow"></i>            
+            </div>
+            
+            <ul class="dropdown__menu">
+              <li>
+                <a href="" class="dropdown__link">
+                
+                  <i class="ri-information-line"></i> About Us 
+              
+                </a>
+              </li>
+            
+              <!--=============== DROPDOWN SUBMENU ===============--> 
+            
+              <li class="dropdown__subitem"> 
+                <div class="dropdown__link"> 
+                
+                  <i class="ri-briefcase-line"></i> Executives 
+                
+                  <i class="ri-arrow-right-s-line dropdown__arrow"></i> 
+                </div>
+              
+                <ul class="dropdown__submenu">
+                  <li>
+                    <a href="" class="dropdown__sublink">
+                    
+                      <i class="ri-briefcase-line"></i> 5th Executive Committee 
+                  
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="" class="dropdown__sublink"> 
+                    
+                      <i class="ri-briefcase-line"></i> 6th Executive Committee 
+                  
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="" class="dropdown__sublink">
+                    
+                      <i class="ri-briefcase-line"></i> 7th Executive Committee 
+                  
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="" class="dropdown__sublink"> 
+                    
+                      <i class="ri-briefcase-line"></i> 8th Executive Committee 
+                  
+                    </a>
+                  </li>
+                
+                  <li> 
+                    <a href="" class="dropdown__sublink"> 
+                    
+                      <i class="ri-briefcase-line"></i> Current Executives 
+                  
+                    </a> 
+                  </li> 
+                
+                  <li> 
+                    <a href="" class="dropdown__sublink"> 
+                    
+                      <i class="ri-briefcase-line"></i> College Executives 
+                  
+                    </a> 
+                  </li> 
+                </ul> 
+              </li> 
+            
+              <li> 
+                <a href="" class="dropdown__link"> 
+                
+                  <i class="ri-file-paper-line"></i> From the Desk 
+                </a>
+              </li>
+            
+              <li>
+                <a href="" class="dropdown__link"> 
+                
+                  <i class="ri-mail-line"></i> Get In Touch 
+              
+                </a> 
+              </li>
+            </ul>
+
+          </li>
+
+          <li>
+            <a href="" class="nav__link">Events</a>
+          </li>
+
+          <li>
+            <a href="" class="nav__link">Contact</a>
+          </li>
+
+        </ul>
+      </div> 
+    </div> 
+  </nav> 
+</header>
+
+<!--
 <nav id="nav">
-  <div class="nav-wrap">
-    <div class="brand"><h2>IELC</h2></div>
+  <div class="nav-wrap container-xxl">
+    <div class="brand">
+      <h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800; letter-spacing: 0.2em;">IELC</h2>
+    </div>
+
     <div class="menu-toggle" id="menuToggle">
       <span></span>
       <span></span>
@@ -23,40 +168,64 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">PAGES</a></li>
-      <li><a href="#">EVENTS</a></li>
-      <li><a href="#">CONTACT</a></li>
+      <li><a href="#" style="--i:1">ABOUT</a></li>
+      <li class="dropdown">
+        <a href="#" style="--i:2">PROGRAMS</a>
+        <ul class="dropdown-menu">
+          <li><a href="#" style="--i:3">Activities</a></li>
+          <li class="dropdown-sub">
+            <a href="#" style="--i:4">Events ▸</a>
+            <ul class="sub-dropdown">
+              <li><a href="#" style="--i:5">Workshops</a></li>
+              <li><a href="#" style="--i:6">Competitions</a></li>
+              <li><a href="#" style="--i:7">Seminars</a></li>
+            </ul>
+          </li>
+          <li><a href="#" style="--i:8">Impact</a></li>
+        </ul>
+      </li>
+      <li><a href="#" style="--i:9">LEADERS</a></li>
+      <li><a href="#" style="--i:10">CONTACT</a></li>
+      <li class="nav-socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </li>
     </ul>
   </div>
 </nav>
+-->
 
-<!-- ADDED (does NOT change content) -->
 <div class="nav-overlay" id="navOverlay"></div>
 
-<section class="hero">
+<section class="hero reveal container-xxl">
   <div>
-    <h1>English: <span>The Infinite</span><br><span>Use Of </span>Finite Means</h1>
+    <h1 style="font-family: 'Orbitron', sans-serif; font-weight: 800; letter-spacing: 0.001em;">
+      English: <span>The Infinite</span><br><span>Use Of </span>Finite Means</h1>
     <p>English is the place where words can create worlds.</p>
   </div>
 </section>
 
-<section id="about" class="about">
-  <div class="img-slot"><img src="24.jpg" alt="ielc logo"></div>
-  <div class="text">
-    <div class="section-title"><h2>Our Journey</h2></div>
-    <p>Since its inception on February 29, 2016, Ideal English Language Club has consistently stood out as one of the most prominent organizations, not only within Ideal School and College but throughout the entire country. Founded under the guidance of Abul Kalam Azad, the club's first Moderator. This club has seen seven dedicated Executive Committees diligently serve during their respective tenures. This illustrious club has achieved significant milestones, including the successful organization of 16 impactful workshops and hosting the renowned National English Language Carnival an impressive five times, solidifying its status as the most dazzling English festival in the country. Furthermore, the club's cherished publication, 'Auspice,' has graced readers' hands five times, a testament to the club's commitment to providing a platform for literary expression.</p>
-    <p>We have successfully organized 17 workshops and hosted the National English Language Carnival six times, while publishing 'Auspice' six times, providing a platform for literary and intellectual expression.</p>
-    <div class="number-sec">
-      <div class="item"><h3>6</h3><p>National Festivals</p></div>
-      <div class="item"><h3>17</h3><p>Workshops</p></div>
-      <div class="item"><h3>6</h3><p>Magazines</p></div>
+<section id="about" class="about reveal container-xxl">
+  <div class="row align-items-center g-5">
+    <div class="img-slot col-lg-6 col-12 order-lg-1 order-1">
+      <img src="24.jpg" alt="ielc logo">
+    </div>
+    <div class="text col-lg-6 col-12 order-lg-2 order-2">
+      <div class="section-title"><h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800;">Our<span style="font-family: 'Orbitron', sans-serif;"> Journey</span></h2></div>
+      <p>Since its inception on February 29, 2016, Ideal English Language Club has consistently stood out as one of the most prominent organizations, not only within Ideal School and College but throughout the entire country. Founded under the guidance of Abul Kalam Azad, the club's first Moderator. This club has seen seven dedicated Executive Committees diligently serve during their respective tenures. This illustrious club has achieved significant milestones, including the successful organization of 16 impactful workshops and hosting the renowned National English Language Carnival an impressive five times, solidifying its status as the most dazzling English festival in the country. Furthermore, the club's cherished publication, 'Auspice,' has graced readers' hands five times, a testament to the club's commitment to providing a platform for literary expression.</p>
+      <p>We have successfully organized 17 workshops and hosted the National English Language Carnival six times, while publishing 'Auspice' six times, providing a platform for literary and intellectual expression.</p>
+      <div class="number-sec">
+        <div class="item"><h3>6</h3><p>National Festivals</p></div>
+        <div class="item"><h3>17</h3><p>Workshops</p></div>
+        <div class="item"><h3>6</h3><p>Magazines</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="activities">
-  <div class="section-title"><h2>Core Activities</h2></div>
+<section id="activities" class="reveal">
+  <div class="section-title"><h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800;"><span style="font-family: 'Orbitron', sans-serif;">Core</span> Activities</h2></div>
   <div class="cards">
     <div class="card">English Enhancement</div>
     <div class="card">Co-Curricular Development</div>
@@ -65,40 +234,111 @@
   </div>
 </section>
 
-<section id="events">
-  <div class="section-title"><h2>Events Showcase</h2></div>
-  <div class="events-wrap">
-    <div class="event">
-      <div class="img-slot">EVENT 1</div>
-      <h3>6th National English Language Carnival</h3>
+<section id="events" class="reveal">
+  <div class="section-title"><h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800;">Events<span style="font-family: 'Orbitron', sans-serif;"> Showcase</span></h2></div>
+
+  <div class="swiper events-swiper container-xxl">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 1</div>
+        <h3>6th National English Language Carnival</h3>
+        <p>February 2025</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 2</div>
+        <h3>17th Workshop</h3>
+        <p>August 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
+      <div class="swiper-slide event">
+        <div class="img-slot">EVENT 3</div>
+        <h3>Elequence 3.0</h3>
+        <p>March 2024</p>
+      </div>
+
     </div>
-    <div class="event">
-      <div class="img-slot">EVENT 2</div>
-      <h3>17th Workshop</h3>
-    </div>
-    <div class="event">
-      <div class="img-slot">EVENT 3</div>
-      <h3>Elequence 3.0</h3>
-    </div>
+
+    <!-- Controls -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-  <div style="text-align:center; margin-top:2.5rem; margin-bottom:5rem;">
+
+  <div style="text-align:center; margin-top:3rem; margin-bottom:5rem;">
     <button class="leader-button">See All Events</button>
   </div>
 </section>
 
-<section id="impact">
-  <div class="section-title"><h2>An Overview of <br>our Legacy Of Excellence</h2></div>
+
+<section id="impact" class="reveal">
+  <div class="section-title">
+    <h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800;">An Overview of <br>Our Legacy Of Excellence</span></h2></div>
   <div class="stats">
-    <div class="stat"><h3>6</h3><p>National Fests</p></div>
-    <div class="stat"><h3>17</h3><p>Workshops</p></div>
-    <div class="stat"><h3>6</h3><p>Megazines</p></div>
-    <div class="stat"><h3>50+</h3><p>Events</p></div>
+    <div class="stat">
+      <h3 class="counter" data-target="6">0</h3>
+      <p>National Fests</p>
+    </div>
+    <div class="stat">
+      <h3 class="counter" data-target="17">0</h3>
+      <p>Workshops</p>
+    </div>
+    <div class="stat">
+      <h3 class="counter" data-target="6">0</h3>
+      <p>Megazines</p>
+    </div>
+    <div class="stat">
+      <h3 class="counter" data-target="50" data-suffix="+">0</h3>
+      <p>Events</p>
+    </div>
   </div>
 </section>
 
-<section id="leaders">
-  <div class="section-title"><h2>The Anchors</h2></div>
-  <div class="leaders">
+<section id="leaders" class="reveal">
+  <div class="section-title"><h2 style="font-family: 'Orbitron', sans-serif; font-weight: 800;">The <span style="font-family: 'Orbitron', sans-serif;"> Anchors</span></h2></div>
+  <div class="leaders container-xxl d-flex flex-column align-items-center">
     <div class="leader">
       <div class="img-slot"><img src="18.jpg" alt="nizam sir"></div>
       <p>Nizam Kamal</p>
@@ -110,19 +350,20 @@
   </div>
 </section>
 
-<section class="from-desk">
-  <div class="sec-head"><h3>From The Desk</h3></div>
-  <div class="content">
-    <div class="img-box"><img src=".jpg" alt="PHOTO"></div>
-    <div class="text-box">
+<section class="from-desk reveal container-xxl">
+  <div class="sec-head"><h3 style="font-family: 'Orbitron', sans-serif; font-weight: 800;">From The Desk</h3></div>
+  <div class="content row align-items-center">
+    <div class="img-box col-lg-6 col-12">
+      <img src="Sazzad.jpg" alt="PHOTO">
+    </div>
+    <div class="text-box col-lg-6 col-12">
       <h3>Md. Sazzadul Islam</h3>
-      <br>
       <span style="color: white; font-size: 15px;">
         Secretary - Information & Communication Technology<br>
         9th Executive Committee
       </span>
       <br>
-      <span style="font-size: 15px;">
+      <span class="spantext" style="font-size: 15px;">
         <br>
         As the editor of the IELC website, I want to share the inspiration and motivation that led me to undertake this project. This website connects, informs, and inspires our club members to thrive in our mission.
       </span>
@@ -134,38 +375,45 @@
 </section>
 
 <footer class="main-footer" id="contact">
-  <div class="container-xxl" style="display:flex;flex-wrap:wrap;gap:2rem;">
+  <div class="container-xxl d-flex flex-wrap gap-4" style="display:flex;flex-wrap:wrap;gap:2rem;">
     <div style="flex:1;">
       <div class="clumn">
-        <div class="logo"><a href="#"><img src=".png" alt="IELC Logo"></a></div>
+        <div class="logo"><a href="#"><img src="ielc white logo.png" alt="IELC Logo"></a></div>
       </div>
     </div>
     <div style="flex:1;">
       <div class="clumn">
-        <h5 style="color: rgb(219, 219, 219);">About Us</h5>
+        <h2 style="color: rgb(219, 219, 219); font-family: 'Orbitron', sans-serif; font-weight: 800;">About Us</h2>
         <ul class="cmp-links">
-          <li><a href="#">Privacy policy</a></li>
-          <li><a href="#">Legal notice</a></li>
-          <li><a href="#">Terms of service</a></li>
+          <br><li><a href="#">Privacy policy</a></li>
+          <br><li><a href="#">Legal notice</a></li>
+          <br><li><a href="#">Terms of service</a></li><br>
         </ul>
       </div>
     </div>
     <div style="flex:2;">
       <div class="clumn">
-        <h5 style="color: rgb(219, 219, 219);">Office</h5>
+        <h2 style="color: rgb(219, 219, 219); font-family: 'Orbitron', sans-serif; font-weight: 800;">Office</h2>
         <ul class="address">
-          <li>Ideal School and College, Room no. 513, Bangla Version Building, Motijheel, Dhaka-1000.</li>
-          <li><a href="mailto:ielc.site">ielc.site</a></li>
-          <li><h6 style="font-size:1.1rem;">+880 1971529263</h6></li>
+          <br><li>Ideal School and College, Room no. 513, Bangla Version Building, Motijheel, Dhaka-1000.</li>
+          <br><li><h6 style="font-size:1.1rem;">+880 1971529263</h6></li>
+          <br><li><a href="mailto:ielc.site">ielc.site</a></li><br><br>
         </ul>
       </div>
     </div>
   </div>
   <div class="sub-footer">
-    <div style="text-align:right;">© 2025 IELC by <a href="#"> Md. Sazzadul Islam</a></div>
+    <div style="text-align: center;">
+      © 2026 IELC by 
+      <a href="#"> Md. Sazzadul Islam</a>
+    </div>
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
