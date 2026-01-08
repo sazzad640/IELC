@@ -679,17 +679,40 @@ footer.main-footer{
   color:var(--gray);
 }
 
+.main-footer .about{
+  margin-top: -120px;
+}
+
+footer.main-footer li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer.main-footer ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+footer.main-footer i {
+  color: var(--red);
+  margin-right: 10px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  text-shadow: 0 0 10px rgba(225,6,0,0.6);
+  transition: 0.3s ease;
+}
+
+
 footer.main-footer .address li h6{
+  font-size: 30px;
   line-height: 3rem;
 }
 
 footer.main-footer .address li a{
-  color: var(--red);
-  transition: 0.3s ease;
-}
-
-footer.main-footer .address li a:hover{
   color: #ffffffd3;
+  transition: 0.3s ease;
+  text-decoration: underline;
 }
 
 footer.main-footer .cmp-links a{
@@ -715,7 +738,7 @@ footer.main-footer a img:hover {
 }
 
 .sub-footer{
-  margin-top: 2rem;
+  margin-top: -35px;
   border-top:1px dashed rgba(225,6,0,.25);
   padding: 5px 0;
   text-align:center;
@@ -1000,13 +1023,53 @@ footer.main-footer a img:hover {
 
   .from-desk .text-box {
     width: 100%;
+    text-align: left;
   }
+
+  footer.main-footer ul {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  footer.main-footer h2{
+    font-size: 1.8rem;
+  }
+
+  footer.main-footer ul li {
+    display: flex;
+    flex-direction: column; /* icon on top, text below */
+    align-items: flex-start; /* align to left/start */
+    gap: 0.3rem;            /* small space between icon and text */
+    text-align: left;
+  }
+
+  /* Icons inside list items */
+  footer.main-footer ul li i {
+    display: block;      /* force icon to a block */
+    margin: 0;           /* remove centering margin */
+    font-size: 1.4rem;   /* adjust size */
+  }
+
+  /* The text immediately after the icon */
+  footer.main-footer ul li > *:not(i) {
+    display: block;      /* make text go below icon */
+    margin: 0;           /* remove default spacing */
+  }
+
+  .sub-footer{
+    margin-top: 30px;
+  }
+
 
 }
 
 
 /* Extra small devices */
 @media (max-width: 500px) {
+
+  body {
+    margin-top: -60px;
+  }
 
   /* GLOBAL SPACING CONTROL */
   section {
@@ -1019,22 +1082,21 @@ footer.main-footer a img:hover {
     line-height: 1.6;
   }
 
-  /* HERO */
+  /* Hero & general layout adjustments */
   .hero {
-    padding: calc(80px + 1.5rem) 1.2rem 3rem;
-    text-align: center;
+    padding: calc(80px + 2rem) 2rem 4rem;
   }
 
   .hero h1 {
-    font-size: clamp(1.7rem, 6vw, 3rem);
-    line-height: 1.15;
+    font-size: clamp(2.8rem, 7vw, 4rem);
+    text-align: left;
   }
 
   .hero p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-top: 1.2rem;
+    font-size: clamp(0.85rem, 2.5vw, 1rem);
+    text-align: left;
   }
+
 
   /* SECTION TITLES */
   .section-title {
@@ -1201,14 +1263,13 @@ footer.main-footer a img:hover {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-  gap: 2rem;
   }
 
 
   footer.main-footer {
     width: 100vw;   /* full viewport width */
     padding: 5rem 0 2rem 0; /* vertical padding only */
-    margin: 0;      /* remove any default margin */
+    margin: 0;
     box-sizing: border-box;
   }
 
@@ -1219,15 +1280,18 @@ footer.main-footer a img:hover {
     margin: 0 auto;         /* center the container */
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
   }
 
   footer.main-footer h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 
   footer.main-footer li {
     font-size: 0.85rem;
+  }
+
+  .main-footer .about{
+    display: none;
   }
 
   .sub-footer {
@@ -1241,7 +1305,7 @@ footer.main-footer a img:hover {
     display: flex;
     justify-content: center; /* center horizontally */
     flex-wrap: nowrap;       /* prevent wrapping */
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     white-space: nowrap;     /* prevent links from breaking into multiple lines */
     padding: 0;
     list-style: none;
@@ -1251,7 +1315,7 @@ footer.main-footer a img:hover {
     color: #ccc;
     text-decoration: none;
     font-size: 0.9rem;
-    margin: 0;
+    margin: -4px;
   }
 
   .sub-footer .c {
